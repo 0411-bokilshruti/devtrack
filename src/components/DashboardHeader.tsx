@@ -7,6 +7,7 @@ import SignOutButton from "@/components/SignOutButton";
 import ThemeToggle from "@/components/ThemeToggle";
 import UserAvatar from "@/components/UserAvatar";
 import KeyboardShortcuts from "@/components/KeyboardShortcuts";
+import CopyLinkButton from "./CopyLinkButton";
 
 export default function DashboardHeader() {
   const { data: session } = useSession();
@@ -62,6 +63,7 @@ export default function DashboardHeader() {
           )}
           <KeyboardShortcuts />
           <UserAvatar />
+          <CopyLinkButton />
           <ThemeToggle />
           <SignOutButton />
         </div>
